@@ -289,4 +289,4 @@ Yii::$app->view->registerCss($style,['type' => "text/css"])
 ?>
 ``` 
 
-Reference to plugin [github](https://github.com/dimsemenov/Magnific-Popup) repository that is used in this widget.
+More examples and docs in website [website](http://dimsemenov.com/plugins/magnific-popup/).
