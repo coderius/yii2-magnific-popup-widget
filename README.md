@@ -289,7 +289,7 @@ Yii::$app->view->registerCss($style,['type' => "text/css"])
 ?>
 ``` 
 
-More examples and docs in website [website](http://dimsemenov.com/plugins/magnific-popup/).
+More examples and docs author in [website](http://dimsemenov.com/plugins/magnific-popup/).
 
 License
 -------
