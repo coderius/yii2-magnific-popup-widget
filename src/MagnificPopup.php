@@ -9,15 +9,19 @@
  */
 namespace coderius\magnificPopup;
 
+use Yii;
 use yii\base\Widget;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use Closure;
+use yii\base\InvalidConfigException;
 
 class MagnificPopup extends Widget
 {
+    public $elems = [];
     
+    private $_elementClass = 'coderius\magnificPopup\Element';
     
     /**
      * @inheritdoc
@@ -25,8 +29,11 @@ class MagnificPopup extends Widget
     public function init()
     {
         parent::init();
-        echo 'test';
-        //
+        
+        if (empty($this->elems) || $this->elems === null) {
+            throw new InvalidConfigException('"MagnificPopup::$elems" must be set');
+        }
+        
     } 
     
     /**
@@ -34,8 +41,17 @@ class MagnificPopup extends Widget
      */
     public function run()
     {
-        //
+        $view = $this->getView();
+        MagnificPopupAsset::register($view);
+        
+        foreach($this->elems as $index => $config){
+            $config['class'] = $this->_elementClass;
+            $elemen = Yii::createObject($config);
+            $result = $elemen->run();
+        }
     }
+    
+    
     
     
 }
