@@ -23,7 +23,7 @@ to the require section of your application's `composer.json` file.
 Usage.
 -----------
 
-* In view file:
+**_In view file:_**
 
 Html part
 ---------
@@ -290,3 +290,7 @@ Yii::$app->view->registerCss($style,['type' => "text/css"])
 ``` 
 
 More examples and docs in website [website](http://dimsemenov.com/plugins/magnific-popup/).
+
+License
+-------
+**yii2-magnific-popup-widget** is released under the MIT License (MIT). See the bundled LICENSE.md for details.
