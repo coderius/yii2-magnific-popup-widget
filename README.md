@@ -25,8 +25,8 @@ Usage.
 
 **_In view file:_**
 
-Html part
----------
+**Html part**
+
 
 ```html
 <!-- ///////////////////////-->
@@ -60,8 +60,8 @@ Html part
 
 ```
 
-Php part
---------
+**Php part**
+
 All elements are contained in array "elems" like single settings array.
 
 ```php
@@ -140,8 +140,8 @@ All elements are contained in array "elems" like single settings array.
 ]);
 ?>
 ```
-Styles
-------
+**Styles**
+
 
 And styles to custom alert windows sets in any place view file:
 
