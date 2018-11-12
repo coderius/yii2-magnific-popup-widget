@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-php composer.phar require coderius\magnificPopup "@dev"
+php composer.phar require coderius/magnificPopup "@dev"
 ```
 
 or add
 
 ```json
-"coderius\magnificPopup" : "@dev"
+"coderius/magnificPopup" : "@dev"
 ```
 
 to the require section of your application's `composer.json` file.
